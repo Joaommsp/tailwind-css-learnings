@@ -327,3 +327,239 @@ Usar a tipografia no Tailwind CSS é simples e flexível.
 ```
 
 <img src="./public/images/space-y.png" alt="">
+
+## 🪡 Bordas
+
+<p>Você pode adicionar bordas a um elemento usando as classes border. Por padrão, isso adiciona uma borda de 1 pixel de largura com uma cor de borda padrão que é cinza</p>
+
+```
+<div class="border">
+  Este elemento tem uma borda padrão.
+</div>
+```
+
+### Largura da Borda
+
+Para definir a largura da borda, você pode usar as classes `border-{tamanho/size}`
+
+```
+<div class="border-2">
+  Este elemento tem uma borda de 2 pixels.
+</div>
+<div class="border-4">
+  Este elemento tem uma borda de 4 pixels.
+</div>
+```
+
+### Cor da Borda
+
+Para mudar a cor da borda use a classe `border-{color}`
+
+### Ring
+
+O `ring` no Tailwind CSS é uma maneira de adicionar uma borda externa ao redor de um elemento, semelhante a uma borda, mas que fica fora do box model padrão do CSS
+
+```
+  <button
+        class="bg-blue-400 font-semibold px-4 py-1 rounded text-white ring-2 hover:bg-slate-800"
+      >
+        SAVE
+      </button>
+```
+
+<img src="./public/images/ring-btn.png" alt="...">
+
+### Border Radius (rounded)
+
+```
+<div class="rounded-lg border border-gray-500 p-4">
+  Borda arredondada uniformemente.
+</div>
+```
+
+```
+    <div class="m-5 p-4 border-2 border-red-400 rounded-md">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+        ratione fuga, totam accusamus odio illo quidem corporis explicabo
+        ducimus modi eius omnis praesentium itaque, perferendis reprehenderit
+        nesciunt repudiandae maiores tempore!
+      </p>
+      <br />
+
+
+      <button
+        class="bg-blue-400 font-semibold px-4 py-1 rounded text-white ring-2 hover:bg-slate-800"
+      >
+        SAVE
+      </button>
+    </div>
+```
+
+<img src="./public/images/rounded.png" alt="...">
+
+## 🤩 Background Image
+
+Esta classe permite que você defina a imagem de fundo, ajuste seu posicionamento, tamanho, repetição e mais.
+
+você pode usar a classe `bg-[url('path/to/image')]`
+
+```
+<div class="bg-[url('https://example.com/path/to/image.jpg')] h-64 w-full">
+  Este elemento tem uma imagem de fundo.
+</div>
+```
+
+Ou você pode adicionar suas próprias imagens de fundo editando a seção theme.backgroundImage do seu arquivo `tailwind.config.js`
+
+<img src="./public/images/image-bg.png" alt="...">
+
+<img src="./public/images/image-bg-mycode.png" alt="...">
+
+<img src="./public/images/image-bg-mycode-html.png" alt="...">
+
+### Gradiente
+
+```
+<div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+<div class="h-14 bg-gradient-to-r from-sky-500 to-indigo-500"></div>
+<div class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
+<div class="h-14 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+```
+
+<img src="./public/images/image-bg-gradient.png" alt="...">
+
+<h4>Documentação de background image completa:</h4>
+
+<a href="https://tailwindcss.com/docs/background-image"><img src="https://skillicons.dev/icons?i=tailwind" height="40" alt="tailwindcss logo"  /></a>
+
+> Clique no ícone para acessar
+
+## 🏹 Flex
+
+<p>P Display flex é implementado através de uma série de classes utilitárias que permitem criar layouts flexíveis e responsivos de maneira simples e eficiente. </p>
+
+### Definindo um Contêiner
+
+```
+<div class="flex">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+### Flex Direction
+
+Você pode definir a direção dos itens flexíveis com as classes `flex-row`, `flex-row-reverse`, `flex-col` e `flex-col-reverse`.
+
+```
+<div class="flex flex-row">
+  <!-- Os itens são organizados em uma linha (horizontalmente) -->
+</div>
+<div class="flex flex-col">
+  <!-- Os itens são organizados em uma coluna (verticalmente) -->
+</div>
+```
+
+<img src="./public/images/flex-html.png" alt="...">
+
+<img src="./public/images/flex-items.png" alt="...">
+
+### Align Items
+
+O alinhamento dos itens dentro do contêiner pode ser controlado com as classes `items-start`, `items-center`, `items-end`, `items-baseline` e `items-stretch`
+
+```
+<div class="flex items-center">
+  <!-- Os itens são alinhados ao centro  -->
+</div>
+```
+
+### Justify Content
+
+A justificação do conteúdo pode ser feita com as classes `justify-start`, `justify-center`, `justify-end`, `justify-between`, `justify-around` e `justify-evenly`.
+
+```
+<div class="flex justify-between">
+  <!-- Os itens são distribuídos com espaço igual entre eles -->
+</div>
+```
+
+## 🦗 Display Grid
+
+O display grid permite criar layouts de duas dimensões com colunas e linhas, proporcionando um controle preciso sobre a organização e o espaçamento dos elementos
+
+### Contêiner Grid
+
+```
+<div class="grid">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+### Colunas
+
+Você pode definir o número de colunas do grid usando a classe `grid-cols-`
+
+```
+<div class="grid grid-cols-3 gap-4">
+  <div class="bg-blue-500 p-4">Item 1</div>
+  <div class="bg-green-500 p-4">Item 2</div>
+  <div class="bg-red-500 p-4">Item 3</div>
+</div>
+```
+
+<img src="./public/images/grid-html.png" alt="...">
+
+<img src="./public/images/grid-items.png" alt="...">
+
+<h4>Documentação do display flex completa:</h4>
+
+<a href="https://tailwindcss.com/docs/flex-basis"><img src="https://skillicons.dev/icons?i=tailwind" height="40" alt="tailwindcss logo"  /></a>
+
+> Clique no ícone para acessar
+
+## Hover, Focus, e outros States
+
+<p> Permite que você aplique estilos a um elemento quando ele é apontado pelo cursor do mouse. Isso é útil para criar interações visuais e melhorar a experiência do usuário. </p>
+
+```
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Hover
+</button>
+```
+
+As outras pseudo-classes funcionam basicamente da mesma forma `<nome da classe>: estilo a ser aplicado`
+
+Neste exemplo, o botão terá um fundo azul (bg-blue-500) que mudará para azul escuro (bg-blue-700) quando o mouse passar sobre ele
+
+### Group Hover
+
+É uma funcionalidade poderosa que permite aplicar estilos a elementos filhos quando um elemento pai é "hovered". Essa característica é útil para criar interações mais complexas
+
+Para usar o group-hover, você precisa de dois elementos principais:
+
+<ul>
+  <li>Um elemento pai com a classe group</li>
+  <li>Um ou mais elementos filhos com a classe group-hover</li>
+</ul>
+
+```
+<div class="group">
+  <div class="bg-gray-200 p-4">
+    Passe o mouse sobre mim
+  </div>
+  <div class="bg-blue-500 p-4 group-hover:bg-blue-700">
+    Eu mudo quando você passa o mouse sobre o pai
+  </div>
+</div>
+```
+
+<h4>Documentação Handling Hover, Focus, and Other States</h4>
+
+<a href="https://tailwindcss.com/docs/hover-focus-and-other-states"><img src="https://skillicons.dev/icons?i=tailwind" height="40" alt="tailwindcss logo"  /></a>
+
+> Clique no ícone para acessar

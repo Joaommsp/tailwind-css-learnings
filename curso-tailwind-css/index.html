@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./public/tailwind-css-icon.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Vite App</title>
+    <title>Tailwind CSS</title>
   </head>
   <body class="bg-gray-100">
     <div id="app">
@@ -58,6 +62,116 @@
       <div class="bg-red-500 p-4 w-24">Item 1</div>
       <div class="bg-green-500 p-4 w-24">Item 2</div>
       <div class="bg-blue-500 p-4 w-24">Item 3</div>
+    </div>
+
+    <div class="m-5 p-4 border-2 border-red-400 rounded-md">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+        ratione fuga, totam accusamus odio illo quidem corporis explicabo
+        ducimus modi eius omnis praesentium itaque, perferendis reprehenderit
+        nesciunt repudiandae maiores tempore!
+      </p>
+      <br />
+
+      <button
+        class="bg-blue-400 font-semibold px-4 py-1 rounded text-white ring-2 hover:bg-slate-800"
+      >
+        SAVE
+      </button>
+    </div>
+
+    <div
+      class="bg-gray-800 p-4 m-4 bg-gradient-to-r from-red-500 to-orange-500"
+    >
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        animi. Magnam laudantium fugit repudiandae veniam quod minus ad vitae
+        incidunt, voluptate reiciendis id non tempore quibusdam pariatur iure
+        aliquam hic?
+      </p>
+    </div>
+
+    <div class="bg-gray-800 p-4 m-4 bg-hero-pattern bg-cover bg-center">
+      <p class="text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        animi. Magnam laudantium fugit repudiandae veniam quod minus ad vitae
+        incidunt, voluptate reiciendis id non tempore quibusdam pariatur iure
+        aliquam hic?
+      </p>
+
+      <p class="text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        animi. Magnam laudantium fugit repudiandae veniam quod minus ad vitae
+        incidunt, voluptate reiciendis id non tempore quibusdam pariatur iure
+        aliquam hic?
+      </p>
+
+      <p class="text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        animi. Magnam laudantium fugit repudiandae veniam quod minus ad vitae
+        incidunt, voluptate reiciendis id non tempore quibusdam pariatur iure
+        aliquam hic?
+      </p>
+    </div>
+
+    <div
+      class="w-8/12 h-20 p-4 m-4 bg-gradient-to-r from-red-500 to-orange-500"
+    >
+      <p class="text-white">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed aspernatur
+        commodi quibusdam, porro expedita repellendus fuga, quod sint ullam
+        velit cupiditate voluptatum ad ducimus corrupti distinctio doloremque in
+        laborum magnam.
+      </p>
+    </div>
+
+    <div
+      class="bg-gray-300 h-52 m-4 w-96 p-2 flex justify-center items-center gap-4"
+    >
+      <div class="w-24 h-24 bg-red-500"></div>
+      <div class="w-24 h-24 bg-blue-500"></div>
+      <div class="w-24 h-24 bg-green-500"></div>
+    </div>
+
+    <div class="bg-gray-300 h-fit m-4 w-96 p-2 grid grid-cols-3 gap-4">
+      <div class="w-24 h-24 bg-red-500"></div>
+      <div class="w-24 flex-grow h-24 bg-blue-500"></div>
+      <div class="w-24 h-24 bg-green-500"></div>
+      <div class="w-24 h-24 bg-red-500"></div>
+      <div class="w-24 flex-grow h-24 bg-blue-500"></div>
+      <div class="w-24 h-24 bg-green-500"></div>
+    </div>
+
+    <div class="bg-red-500 m-4 p-4 w-96">
+      <span class="text-white text-sm laptop:text-lg desktop:text-xl"
+        >HELLO TAILWIND</span
+      >
+    </div>
+
+    <div class="bg-green-300 p-2 m-4">
+      <h2 class="text-gray-700 hover:text-red-800 hover:cursor-pointer">
+        HOVER
+      </h2>
+      <button class="bg-blue-500 px-4 py-1 focus:text-red-600">FOCAR</button>
+    </div>
+
+    <div class="group w-72 bg-gray-500 p-4 m-4">
+      <h4 class="font-bold text-blue-300 group-hover:text-red-300">
+        Titulo card
+      </h4>
+      <p class="text-blue-700 group-hover:text-green-500">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem aut quos
+        ipsum nemo doloremque? Quas, modi, obcaecati id accusantium tempora
+        possimus impedit fugiat, unde perferendis quaerat eaque ullam beatae
+        odio.
+      </p>
+    </div>
+
+    <div class="m-4 p-2 bg-purple-500">
+      <input
+        type="text"
+        class="bg-gray-100 text-lg px-4 py-2 hover:bg-gray-400 focus:text-red-700"
+      />
     </div>
 
     <script type="module" src="./src/main.js"></script>
