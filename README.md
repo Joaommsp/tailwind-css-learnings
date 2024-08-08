@@ -522,7 +522,7 @@ Você pode definir o número de colunas do grid usando a classe `grid-cols-`
 
 > Clique no ícone para acessar
 
-## Hover, Focus, e outros States
+## 🖱️ Hover, Focus, e outros States
 
 <p> Permite que você aplique estilos a um elemento quando ele é apontado pelo cursor do mouse. Isso é útil para criar interações visuais e melhorar a experiência do usuário. </p>
 
