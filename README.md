@@ -563,3 +563,104 @@ Para usar o group-hover, você precisa de dois elementos principais:
 <a href="https://tailwindcss.com/docs/hover-focus-and-other-states"><img src="https://skillicons.dev/icons?i=tailwind" height="40" alt="tailwindcss logo"  /></a>
 
 > Clique no ícone para acessar
+
+## 💀 Dark Mode
+
+O Tailwind CSS oferece suporte nativo ao Dark Mode através da classe `dark`
+
+<h4>É muito simples de utiliza-lo:</h4>
+
+Basta adicionar o prefixo `dark:` a uma classe de estilo
+
+```
+<div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+  <div>
+    <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
+      <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
+    </span>
+  </div>
+  <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Writes Upside-Down</h3>
+  <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+    The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
+  </p>
+</div>
+```
+
+<p> Dessa maneira , quando o <strong>Sistema</strong> ou o <strong>Navegador</strong> estiver no modo escuro , o estilo com o "dark:" vai prevalecer</p>
+
+### Aplicando o modo dark manualmente
+
+Se você quiser oferecer suporte à alternância manual do modo escuro em vez de depender da preferência do sistema operacional, use a estratégia de `selector` em vez da estratégia do `media`:
+
+### No seu arquivo tailwind.config.js configure:
+
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: 'selector',
+  // ...
+}
+```
+
+Dessa maneira o modo escuro será ativado apenas quando a tag `HTML` estiver com a classe `dark`:
+
+```
+<!-- Mode escuro não ativado -->
+<html>
+<body>
+  <!-- Will be white -->
+  <div class="bg-white dark:bg-black">
+    <!-- ... -->
+  </div>
+</body>
+</html>
+
+<!-- Modo escuro ativado -->
+<html class="dark">
+<body>
+  <!-- Will be black -->
+  <div class="bg-white dark:bg-black">
+    <!-- ... -->
+  </div>
+</body>
+</html>
+```
+
+## ✍️ Classes personalizadas
+
+<p>No Tailwind CSS, você pode criar classes personalizadas para estender a funcionalidade padrão da biblioteca</p>
+
+### Usando @apply para Componentes Personalizados
+
+O `@apply` é uma diretiva do Tailwind que permite compor várias classes utilitárias em uma única classe CSS. Isso é útil para criar componentes reutilizáveis
+
+### Configure seu main.css
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-custom-style {
+  /* ... */
+}
+```
+
+### Crie suas classes personalizadas
+
+```/* styles.css */
+.btn-primary {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-secondary {
+  @apply bg-gray-500 text-black font-semibold py-2 px-4 rounded;
+}
+```
+
+Aqui, duas classes (.btn-primary e .btn-secondary) foram criadas com estilos combinados. Agora, você pode aplicar esses estilos em qualquer elemento usando essas classes personalizadas.
+
+### Criando Classes Personalizadas no CSS
+
+Se você precisar de um controle mais refinado ou deseja adicionar estilos que o Tailwind não cobre, pode simplesmente escrever suas próprias classes CSS no arquivo de estilos.
+
