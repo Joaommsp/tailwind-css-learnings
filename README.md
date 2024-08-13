@@ -664,3 +664,13 @@ Aqui, duas classes (.btn-primary e .btn-secondary) foram criadas com estilos com
 
 Se você precisar de um controle mais refinado ou deseja adicionar estilos que o Tailwind não cobre, pode simplesmente escrever suas próprias classes CSS no arquivo de estilos.
 
+```
+.custom-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.custom-gradient {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+```
+
