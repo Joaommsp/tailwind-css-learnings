@@ -1,9 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./componentes.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./componentes.html",
+    "./loginpage.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: "selector",
   // ...
   theme: {
+    fontFamily: {
+      display: ["Poppins", "sans-serif"],
+      backup: ["Outfit", "sans-serif"],
+    },
     screens: {
       tablet: "640px",
       // => @media (min-width: 640px) { ... }
@@ -17,6 +26,7 @@ export default {
     backgroundImage: {
       "hero-pattern":
         "url('https://images.unsplash.com/photo-1494697536454-6f39e2cc972d?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+      "login-hero": "url('/public/ashe-wallpaper.jpg')",
     },
   },
   plugins: [],
