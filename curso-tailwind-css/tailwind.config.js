@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./componentes.html",
     "./loginpage.html",
+    "./home.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "selector",

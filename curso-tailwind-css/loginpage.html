@@ -16,15 +16,16 @@
   </head>
   <body class="h-screen w-screen flex justify-center items-center">
     <div
-      class="container max-w-md h-full p-10 bg-gray-100 flex flex-col justify-center items-start"
+      class="container max-w-md h-full p-10 bg-gray-100 flex flex-col justify-center items-start py-24"
     >
-      <h2 class="font-bold font-backup text-2xl text-left mb-4 text-gray-900">
+      <img class="w-14 absolute top-8" src="./public/pngegg.png" alt="" />
+      <h2 class="font-bold font-backup text-xl text-left mb-4 text-gray-900">
         Sign in with yout Riot <br />
         Account
       </h2>
 
       <div class="w-full flex flex-col gap-4">
-        <div class="flex flex-col bg-gray-200 p-2 group">
+        <div class="flex flex-col bg-gray-200 p-2 rounded-sm">
           <label
             for="email"
             class="text-xs font-backup text-gray-800 mb-1 font-bold"
@@ -32,11 +33,11 @@
           >
           <input
             id="email"
-            class="block bg-gray-200 outline-none text-sm font-semibold group-hover:border group-hover:border-blue-500"
+            class="block bg-gray-200 outline-none text-xs font-semibold"
             type="text"
           />
         </div>
-        <div class="flex flex-col bg-gray-200 p-2">
+        <div class="flex flex-col bg-gray-200 p-2 rounded-sm mb-4">
           <label
             for="password"
             class="text-xs font-backup text-gray-800 mb-1 font-bold"
@@ -44,13 +45,55 @@
           >
           <input
             id="password"
-            class="block bg-gray-200 outline-none text-sm font-semibold"
+            class="block bg-gray-200 outline-nonetext-xs font-semibold"
             type="password"
           />
         </div>
-        <div class="flex flex-col">
-          <button>Login</button>
+        <div class="flex justify-center items-center w-full gap-2">
+          <div
+            class="w-full flex justify-center items-center p-2 bg-blue-500 rounded-md"
+          >
+            <img class="w-5" src="./public/facebook-svgrepo-com.svg" alt="" />
+          </div>
+          <div
+            class="w-full flex justify-center items-center p-2 bg-gray-200 rounded-md"
+          >
+            <img
+              class="w-5"
+              src="./public/google-color-svgrepo-com.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-full flex justify-center items-center p-2 bg-gray-950 rounded-md"
+          >
+            <img class="w-5" src="./public/apple-173-svgrepo-com.svg" alt="" />
+          </div>
         </div>
+        <div class="flex items-center gap-1 mb-8">
+          <input
+            type="checkbox"
+            class="form-checkbox h-4 w-4 accent-red-500"
+            name=""
+            id=""
+          />
+          <span class="block font-bold font-display text-sm text-gray-700"
+            >Stay signed in</span
+          >
+        </div>
+        <div class="flex justify-center items-center w-full">
+          <button class="bg-red-500 p-3 rounded-2xl">
+            <img
+              class="w-5"
+              src="./public/arrow-right-svgrepo-com.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+      <div class="absolute bottom-8 flex flex-col justify-start">
+        <span class="font-bold font-display text-gray-500 text-xs">CREATE ACCOUNT</span>
+        <span class="font-bold font-display text-gray-500 text-xs">CAN´T SIGN IN?</span>
       </div>
     </div>
     <div class="bg-login-hero bg-cover bg-center w-full h-full"></div>
