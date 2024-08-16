@@ -11,13 +11,15 @@
 
     <title>Document</title>
   </head>
-  <body class="bg-gray-50">
+  <body class="bg-gray-50 font-display text-gray-800">
     <!--Header-->
-    <div class="container flex items-center mx-auto px-4 h-24 justify-between">
+    <div
+      class="container max-w-5xl flex items-center mx-auto px-4 h-12 tablet:h-24 justify-between"
+    >
       <div class="">
-        <div class="font-black text-xl">LOGO</div>
+        <div class="font-black text-xl text-gray-900">LOGO</div>
       </div>
-      <ul class="flex items-center gap-4">
+      <ul class="hidden tablet:flex items-center gap-4">
         <li>
           <a
             href=""
@@ -60,13 +62,15 @@
       >
         <div class="flex flex-col items-center gap-1 mb-4">
           <h1 class="text-4xl text-gray-100 block">Aonde você quer ir?</h1>
-          <p class="text-gray-200 block">
+          <p class="text-gray-200 block text-center">
             Escolha o estado e cidade para achar os melhores hotéis e resorts.
           </p>
         </div>
 
-        <div>
-          <form class="flex items-center gap-2">
+        <div class="w-full tablet:w-fit">
+          <form
+            class="grid grid-cols-1 w-full items-center gap-2 laptop:flex laptop:items-center tablet:grid-cols-2"
+          >
             <select
               class="bg-gray-50 px-3 py-2 border-gray-300 rounded text-gray-500 font-medium"
             >
@@ -78,7 +82,7 @@
               <option value="">Escolha a cidade</option>
             </select>
             <button
-              class="text-yellow-800 bg-yellow-500 px-4 py-2 rounded flex items-center gap-2 font-medium"
+              class="text-yellow-800 w-full col-span-1 bg-yellow-500 px-4 py-2 rounded flex justify-between items-center gap-2 font-medium tablet:col-span-2"
             >
               Pesquisar hotéis
               <img class="w-5" src="./public/search-svgrepo-com.svg" alt="" />
@@ -91,12 +95,184 @@
 
     <!--Featured-->
     <div>
-      <div class="container mx-auto px-4 py-10">
-        <div>
-          
+      <div
+        class="flex-col gap-8 container flex mx-auto px-4 py-12 laptop:flex-row"
+      >
+        <div class="flex flex-col w-full gap-6 laptop:w-1/2">
+          <div>
+            <span class="block mb-8 text-xs font-bold">HOTEL EM DESTAQUE</span>
+            <h2 class="text-3xl font-medium">Hotel Colline de France</h2>
+            <span class="text-xs font-bold text-gray-600">5 Estrelas</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quia
+            tempore non, minus accusantium quam ad illum asperiores vero
+            doloribus, repellendus nemo fugiat hic molestias est quasi inventore
+            voluptatem distinctio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos amet
+            deserunt quidem temporibus est nisi expedita maiores.
+          </p>
+          <button
+            class="w-60 text-yellow-800 bg-yellow-500 px-4 py-2 rounded flex items-center justify-between gap-2 font-medium"
+          >
+            Solicitar reserva
+            <img
+              class="w-5"
+              src="./public/arrow-right-svgrepo-com.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="w-full flex justify-center items-center p-2 laptop:w-1/2">
+          <img
+            class="w-full"
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
         </div>
       </div>
     </div>
     <!--Featured-->
+
+    <!--Resorts-->
+    <div>
+      <div class="container mx-auto px-4 mb-8">
+        <div class="mb-8">
+          <h3 class="text-2xl text-center font-medium">
+            Conheça mais hotéis e resorts
+          </h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center gap-4 laptop:items-stretch laptop:grid laptop:h-96 laptop:grid-cols-4 laptop:grid-rows-2 laptop:gap-4"
+        >
+          <div class="relative laptop:col-span-2 laptop:row-span-2">
+            <img
+              class="laptop:w-full laptop:h-full laptop:object-cover rounded-md"
+              src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              style="
+                background: rgb(0, 0, 0);
+                background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.6295061432913448) 0%,
+                  rgba(0, 0, 0, 0.1884949073362886) 100%
+                );
+              "
+              class="absolute bottom-0 rounded-md w-full h-full"
+            ></div>
+            <span class="absolute bottom-4 font-bold left-4 text-gray-100">
+              Califórnia West Hotel
+            </span>
+          </div>
+          <div class="relative laptop:col-span-2">
+            <img
+              class="laptop:w-full laptop:h-full laptop:object-cover rounded-md"
+              src="https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?q=80&w=1518&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              style="
+                background: rgb(0, 0, 0);
+                background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.6295061432913448) 0%,
+                  rgba(0, 0, 0, 0.1884949073362886) 100%
+                );
+              "
+              class="absolute bottom-0 rounded-md w-full h-full"
+            ></div>
+            <span class="absolute bottom-4 font-bold left-4 text-gray-100">
+              Dubai Sunday Hotel
+            </span>
+          </div>
+          <div class="relative">
+            <img
+              class="laptop:w-full laptop:h-full laptop:object-cover rounded-md"
+              src="https://images.unsplash.com/photo-1522255272218-7ac5249be344?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              style="
+                background: rgb(0, 0, 0);
+                background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.6295061432913448) 0%,
+                  rgba(0, 0, 0, 0.1884949073362886) 100%
+                );
+              "
+              class="absolute bottom-0 rounded-md w-full h-full"
+            ></div>
+            <span class="absolute bottom-4 font-bold left-4 text-gray-100">
+              New York Central Hotel
+            </span>
+          </div>
+          <div class="relative">
+            <img
+              class="laptop:w-full laptop:h-full laptop:object-cover rounded-md"
+              src="https://images.unsplash.com/photo-1667871124729-54ba82b9fb23?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div
+              style="
+                background: rgb(0, 0, 0);
+                background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.6295061432913448) 0%,
+                  rgba(0, 0, 0, 0.1884949073362886) 100%
+                );
+              "
+              class="absolute bottom-0 rounded-md w-full h-full"
+            ></div>
+            <span class="absolute bottom-4 font-bold left-4 text-gray-100">
+              Beach Park Resort
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Resorts-->
+
+    <!--Form search-->
+    <div class="w-full flex justify-center">
+      <div class="w-full container p-8 flex items-center justify-center">
+        <form
+          class="w-full flex flex-col items-center justify-center gap-2 laptop:flex-row"
+        >
+          <select
+            class="w-full bg-gray-200 outline-none px-3 py-2 border-gray-300 rounded text-gray-500 font-medium"
+          >
+            <option value="">Escolha o estado</option>
+          </select>
+          <select
+            class="w-full bg-gray-200 outline-none px-3 py-2 border-gray-300 rounded text-gray-500 font-medium"
+          >
+            <option value="">Escolha a cidade</option>
+          </select>
+          <button
+            class="w-full text-yellow-800 outline-none bg-yellow-500 px-4 py-2 rounded flex justify-between items-center gap-2 font-medium"
+          >
+            Pesquisar Resorts
+            <img class="w-5" src="./public/search-svgrepo-com.svg" alt="" />
+          </button>
+        </form>
+      </div>
+    </div>
+    <!--Form search-->
+
+    <footer class="border-t border-gray-400 py-16 mt-8">
+      <div class="container mx-auto px-4 flex items-center justify-between">
+        <div class="font-black text-gray-500 text-xl">LOGO</div>
+        <div class="flex items-center justify-center gap-2">
+          <img class="w-5" src="./public/facebook.svg" alt="" />
+          <img class="w-5" src="./public/instagram-svgrepo-com.svg" alt="" />
+          <img class="w-5" src="./public/twitter-154-svgrepo-com.svg" alt="" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -20,6 +20,30 @@
 
 </div>
 
+## ⚓ Mini projetos
+
+<p>Desenvolvi esses 2 pequenos projetos usando Tailwind CSS durante um período de estudos</p>
+
+<div align="left">
+
+### Interface de um site de Hoteis e Resorts
+
+<img src="./public/images/MacBook Pro-1723769507822.jpeg" alt="..." />
+<img src="./public/images/responsive-hotel-site.png" alt="..." />
+</div>
+
+### 🔗 Deploy
+
+### Interface login League Of Legends
+
+<img src="./public/images/MacBook Pro-1723770524026.jpeg" alt="..." />
+<img src="./public/images/responsive-login-site.png" alt="..." />
+</div>
+
+### 🔗 Deploy
+
+<a hred="#">Confira aqui o projeto</a>
+
 ## ⚓ Inline Style
 
 <p>Umas das diferença entre o inline-style e o tailwind css são as limitações que o estilo em linha possui:</p>
@@ -673,4 +697,3 @@ Se você precisar de um controle mais refinado ou deseja adicionar estilos que o
   background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 ```
-
