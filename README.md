@@ -42,7 +42,7 @@
 
 ### 🔗 Deploy
 
-<a hred="#">Confira aqui o projeto</a>
+<a href="#">Confira aqui o projeto</a>
 
 ## ⚓ Inline Style
 
