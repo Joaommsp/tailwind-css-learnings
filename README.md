@@ -20,7 +20,7 @@
 
 </div>
 
-## ⚓ Mini projetos
+## ✍️ Mini projetos
 
 <p>Desenvolvi esses 2 pequenos projetos usando Tailwind CSS durante um período de estudos</p>
 
@@ -34,6 +34,8 @@
 
 ### 🔗 Deploy
 
+<a href="https://tailwind-css-learnings.vercel.app/home">Confira aqui o projeto</a>
+
 ### Interface login League Of Legends
 
 <img src="./public/images/MacBook Pro-1723770524026.jpeg" alt="..." />
@@ -42,7 +44,7 @@
 
 ### 🔗 Deploy
 
-<a href="#">Confira aqui o projeto</a>
+<a href="https://tailwind-css-learnings.vercel.app/loginpage">Confira aqui o projeto</a>
 
 ## ⚓ Inline Style
 
